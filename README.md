@@ -1,6 +1,6 @@
-<img src="icon.png" alt="SplitViewEnabler icon" width="96" align="left">
+<p align="center"><img src="icon.png" alt="SplitViewEnabler icon" width="128"></p>
 
-# SplitViewEnabler (iOS 12)
+<h1 align="center">SplitViewEnabler (iOS 12)</h1>
 
 **Split View and Slide Over on iPads that only had Slide Over.**
 
