@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key><string>Split View</string>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key><string>PSGroupCell</string>
+			<key>footerText</key><string>Lets two apps share the screen. Drag an app from the Dock to the left or right edge of the screen, or pull a Slide Over app down by its top handle. Apps that don't support multitasking (e.g. Settings) stay full screen.</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSwitchCell</string>
+			<key>default</key><true/>
+			<key>defaults</key><string>com.itsallexb.splitviewenabler</string>
+			<key>key</key><string>enabled</string>
+			<key>label</key><string>Enabled</string>
+			<key>PostNotification</key><string>com.itsallexb.splitviewenabler/prefschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSGroupCell</string>
+			<key>label</key><string>Mode</string>
+			<key>footerText</key><string>Split View + Slide Over matches iPads with official Split View (also allows a Slide Over app on top of a Split View). "2 apps max" uses less memory on this 1 GB iPad. Changes apply right away; respring if a Split View is open while you switch.</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSLinkListCell</string>
+			<key>detail</key><string>PSListItemsController</string>
+			<key>default</key><integer>3</integer>
+			<key>defaults</key><string>com.itsallexb.splitviewenabler</string>
+			<key>key</key><string>mode</string>
+			<key>label</key><string>Mode</string>
+			<key>validValues</key><array><integer>3</integer><integer>2</integer><integer>0</integer></array>
+			<key>validTitles</key><array><string>Split View + Slide Over</string><string>Split View, 2 apps max</string><string>Slide Over only (stock)</string></array>
+			<key>shortTitles</key><array><string>Split View + Slide Over</string><string>2 apps max</string><string>Stock</string></array>
+			<key>PostNotification</key><string>com.itsallexb.splitviewenabler/prefschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSButtonCell</string>
+			<key>label</key><string>Respring</string>
+			<key>action</key><string>respring</string>
+		</dict>
+	</array>
+</dict>
+</plist>
